@@ -4,8 +4,7 @@ pipeline {
 		  stage("Checkout") {
             agent any
             steps {
-                sh 'git clone https://github.com/gvsiva2008/Jenkins.git'
-				sh 'cd Maven-simple'
+                sh 'git clone https://github.com/gvspdevops1/sonar_project.git'
             }
           }
           stage("build & SonarQube analysis") {
